@@ -1,0 +1,37 @@
+<ol>
+    <li>What is RXJS?</li>
+    <p>
+        RXJS is the JavaScript implementation of the Reactive Extension API. RXJS
+        provides us single API to deal the data stream that is coming from the
+        multiple sources over the time by using observable patterns.
+    </p>
+
+    <li>What are the different types of Data Streams handle with RXJS?</li>
+    <ul>
+        <li>Synchronous Data ----- Arrays, Objects, etc</li>
+        <li>Asynchronous Data ----- SetTimeOut(), SetInterval()</li>
+        <li>Getting data from server as http calls.</li>
+        <li>DOM events</li>
+        <li>Functions with return values</li>
+    </ul>
+
+    <li>How Observer register with Observable in RCJS?</li>
+    <p>
+        In RXJS the observable having the <b>subscribe()</b> method, by using this
+        method the observer will register to the observable to get the asynchronous
+        data.
+    </p>
+
+    <li>How observable pass the data to observer in RXJS?</li>
+    <p>
+        while observer register to the observable using <b>subscribe()</b> method,
+        the observer passes the object parameter to the <b>subscribe()</b> method. The object contains three methods
+        <b>next(), error(),</b> and <b>complete()</b> methods.
+    </p>
+
+    <ul>
+        <li>whenever the observable wants to send the data to observer it calls the next() method that is provided by the observer.</li>
+        <li>When the error occurs the observable calls the observer error() method.</li>
+        <li>Finally the Observable call the complete() method when it is done sending the values.</li>
+    </ul>
+</ol>
